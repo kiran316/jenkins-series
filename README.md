@@ -20,7 +20,8 @@ Let’s dive right into it.
 
 ## The High-Level Flowchart of CI Pipeline Using Jenkins
         Let’s see what a “very” high-level view of our Continuous Integration (CI) Pipeline using Jenkins looks like:
-        <image link>
+        ![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
 
         The flow diagram is easy to understand however, there are few things to note,
 
