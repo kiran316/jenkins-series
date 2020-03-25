@@ -43,7 +43,7 @@ Let’s dive right into it.
         like : http://<ip>:8080
 
         Jenkins welcomes us with the “Setup Wizard Screen” which requires us to enter the “InitialAdminPassword” located under the               Jenkins_Home directory defaulted to /var/jenkins_home/secrets/initialAdminPassword. The password is displayed in the start-up           logs as well:
-        <image link 2>
+        ![alt text](https://github.com/prateekdevisingh/jenkins-series/tree/master/images/JenkinsScreen1.png)
 
 
 ## Setting up a Custom Docker Image for Our Jenkins Master
@@ -76,7 +76,7 @@ Let’s dive right into it.
         Line# 18 takes care of adding the magical start-up python script responsible for attaching to our master as a build agent!
 
         Now, who likes to go through a 90 line python script? Not me ?! To make things easier let’s look at this simple flowchart to             understand this!      
-        <Image link 4>
+        ![alt text](https://github.com/prateekdevisingh/jenkins-series/tree/master/images/slave_python.png)
         
         The “wait for the master” logic is going to come in very handy when we wrap the master and slave into a docker-compose file. The         depends_on: tag in docker-compose doesn’t serve as well, as the jenkins master takes more time to be fully up and running than           what docker-compose estimates it to be. Thus, it’s added intelligence to our slave.
 
